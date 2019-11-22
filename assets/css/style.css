@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/hotel-wallpaper-black.png");
+    /* background-image: url("../images/hotel-wallpaper-black.png"); */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
