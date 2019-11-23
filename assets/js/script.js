@@ -71,6 +71,9 @@ function next() {
             console.log(score)
             console.log(i)
             main.innerHTML = "";
+            let scoreDisplay = document.createElement("h1");
+            scoreDisplay.textContent = "Your score is:  " + score;
+            main.append(scoreDisplay);
         }
     }
 
