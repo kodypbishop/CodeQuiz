@@ -26,15 +26,17 @@
 </head>
 
 <body>
-    <div class="container" id="everything">
-        <a onclick="highscores();">High Scores</a>
-        <div>
-            timer <span id="time">60</span>
+    <div class="container col-md-6 col-lg-6 text-center" id="everything">
+        <div class="d-flex">
+            <a class="mr-auto" onclick="highscores();">High Scores</a>
+            <div class="">
+                Timer: <span id="time">60</span>
+            </div>
         </div>
-        <div id="main">
-            <button id="start">start</button>
+        <div id="main" class="text-center">
+                <button id="start" class="btn btn-success btn-large m-2">start</button>
         </div>
-        <div id="form"> 
+        <div id="form" class="text-center">
 
         </div>
     </div>

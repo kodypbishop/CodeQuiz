@@ -39,7 +39,7 @@ function qu() {
     main.append(question);
     for (let j = 0; j < questions[i].choices.length; j++) {
         let choices = document.createElement("button");
-        choices.setAttribute("class", "btn");
+        choices.setAttribute("class", "btn btn-primary btn-large col-sm-5 m-1");
         choices.textContent = questions[i].choices[j];
         main.append(choices);
     }
@@ -130,11 +130,14 @@ function highscores() {
     }
     let reset = document.createElement("button");
     reset.textContent = "Go Back"
-
     reset.setAttribute("onClick", "window.location.reload();");
+
+    reset.setAttribute("class", "btn btn-primary btn-large col-sm-5 m-1");
     everything.append(reset);
+
     let clear = document.createElement("button");
     clear.textContent = "Clear Scores"
     clear.setAttribute("onClick", "localStorage.clear(); highscores();");
+    clear.setAttribute("class", "btn btn-danger btn-large col-sm-5 m-1");
     everything.append(clear);
 }
